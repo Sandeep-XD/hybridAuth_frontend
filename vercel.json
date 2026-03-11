@@ -3,8 +3,12 @@
   "outputDirectory": "build/web",
   "routes": [
     {
-      "src": "/api/(.*)",
+      "src": "^/api/(.*)",
       "dest": "http://ad470f3aa1cea4a0195ee309b31fe5bb.ap-south-1.elb.amazonaws.com/api/v1/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
