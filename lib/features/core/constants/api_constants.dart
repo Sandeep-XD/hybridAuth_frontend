@@ -1,5 +1,5 @@
 class ApiConstants {
-  static const baseUrl = "http://192.168.20.226:8083/api/v1"; //do not change
+  static const baseUrl = "http://ad470f3aa1cea4a0195ee309b31fe5bb-1883728287.ap-south-1.elb.amazonaws.com/api/v1"; //do not change
 
   static const authInit = "/auth/init";
 
