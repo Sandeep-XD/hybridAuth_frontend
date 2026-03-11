@@ -1,4 +1,10 @@
 {
   "buildCommand": "git clone https://github.com/flutter/flutter.git --depth 1 -b stable && export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter config --enable-web && flutter pub get && flutter build web",
-  "outputDirectory": "build/web"
+  "outputDirectory": "build/web",
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "http://ad470f3aa1cea4a0195ee309b31fe5bb.ap-south-1.elb.amazonaws.com/api/v1/$1"
+    }
+  ]
 }
